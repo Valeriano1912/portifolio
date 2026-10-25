@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-MZ" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Valeriano Júnior | Portfólio Profissional</title>
+    <meta name="description" content="Estudante finalista de Tecnologias de Informação na UCM-FEG, Beira. Desenvolvimento web, soluções digitais e serviços tecnológicos.">
+    <!-- Partilha (WhatsApp, LinkedIn, Facebook) — substituir SEU-DOMINIO após o deploy -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:title" content="João Valeriano Júnior | Portfólio Profissional">
+    <meta property="og:description" content="Estudante finalista de TI na UCM-FEG, Beira. Websites, sistemas web e suporte informático.">
+    <meta property="og:url" content="https://SEU-DOMINIO.vercel.app/">
+    <meta property="og:image" content="https://SEU-DOMINIO.vercel.app/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://SEU-DOMINIO.vercel.app/">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta name="theme-color" content="#0a0f1d">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header id="header" class="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">JV<span>J</span></a>
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre mim</a></li>
+                    <li><a href="#competencias" class="nav-link">Competências</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#projectos" class="nav-link">Projectos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contactos</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#contacto" class="btn btn-primary btn-sm">Vamos conversar</a>
+                <button id="hamburger" class="hamburger" aria-label="Menu móvel">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Secção Inicial (Hero) -->
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="availability-badge">
+                        <span class="pulse-dot"></span> Disponível para projectos e oportunidades
+                    </div>
+                    <h1>Olá, sou <span class="highlight">João Valeriano Júnior</span>.</h1>
+                    <h2 class="hero-subtitle">Transformo ideias em soluções digitais.</h2>
+                    <p class="hero-description">
+                        Sou finalista de Tecnologias de Informação na Universidade Católica de Moçambique e dedico-me ao desenvolvimento de soluções tecnológicas, à criação de websites e à construção de experiências digitais funcionais e modernas.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projectos" class="btn btn-primary">Ver os meus projectos <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#servicos" class="btn btn-outline">Contratar os meus serviços</a>
+                        <a href="#" class="btn btn-ghost" id="cvDownloadBtn" title="Ficheiro PDF a actualizar"><i class="fa-solid fa-file-arrow-down"></i> Descarregar CV</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-card">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-title">perfil.js</span>
+                        </div>
+                        <pre><code><span class="keyword">const</span> <span class="variable">desenvolvedor</span> = {
+    <span class="property">nome</span>: <span class="string">"João Valeriano Júnior"</span>,
+    <span class="property">idade</span>: <span class="number">21</span>,
+    <span class="property">local</span>: <span class="string">"Beira, Moçambique"</span>,
+    <span class="property">curso</span>: <span class="string">"Tecnologias de Informação"</span>,
+    <span class="property">instituicao</span>: <span class="string">"UCM-FEG"</span>,
+    <span class="property">foco</span>: [<span class="string">"Web Dev"</span>, <span class="string">"Sistemas"</span>, <span class="string">"Redes"</span>]
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção Sobre Mim -->
+        <section id="sobre" class="section sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Quem sou</span>
+                    <h2>Sobre mim</h2>
+                    <p>Conheça o meu percurso e a minha paixão pela tecnologia.</p>
+                </div>
+                <div class="sobre-grid">
+                    <div class="sobre-avatar-card">
+                        <div class="avatar-photo">
+                            <img src="images/foto-perfil.jpg" alt="João Valeriano Júnior" width="600" height="600" loading="lazy">
+                        </div>
+                        <h3>João Valeriano Júnior</h3>
+                        <p class="sobre-role">Estudante Finalista de TI</p>
+                        <div class="sobre-location">
+                            <i class="fa-solid fa-location-dot"></i> Beira, Moçambique
+                        </div>
+                    </div>
+                    <div class="sobre-text-card">
+                        <p>
+                            Sou João Valeriano Júnior, tenho 21 anos e sou finalista do curso de <strong>Tecnologias de Informação</strong> na <strong>Universidade Católica de Moçambique</strong>, Faculdade de Economia e Gestão (FEG), na Beira. Tenho interesse pelo desenvolvimento de software, desenvolvimento web, redes de computadores e administração de sistemas.
+                        </p>
+                        <p>
+                            Gosto de aprender novas tecnologias, resolver problemas e transformar ideias em soluções digitais úteis. O meu objectivo é continuar a desenvolver as minhas competências e aplicar os meus conhecimentos em projectos que criem valor para pessoas e organizações.
+                        </p>
+                        <div class="sobre-highlights">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Formação Académica</h4>
+                                    <p>TI na UCM-FEG (Beira)</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-bullseye"></i>
+                                <div>
+                                    <h4>Foco Profissional</h4>
+                                    <p>Desenvolvimento web & sistemas</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <div>
+                                    <h4>Abordagem</h4>
+                                    <p>Aprendizagem contínua e foco prático</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção de Competências Técnicas -->
+        <section id="competencias" class="section competencias">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Expertise</span>
+                    <h2>Competências Técnicas</h2>
+                    <p>Tecnologias e ferramentas que utilizo no desenvolvimento de projectos.</p>
+                </div>
+                <div class="competencias-grid">
+                    <div class="competencia-card">
+                        <div class="competencia-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h3>Desenvolvimento Web</h3>
+                        <p class="competencia-desc">Criação de interfaces modernas, responsivas e intuitivas.</p>
+                        <ul class="tech-list">
+                            <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                            <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                            <li><i class="fa-solid fa-mobile-screen"></i> Design Responsivo</li>
+                            <li><i class="fa-solid fa-laptop-code"></i> Manutenção de Websites</li>
+                        </ul>
+                    </div>
+                    <div class="competencia-card">
+                        <div class="competencia-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Programação e Desenvolvimento</h3>
+                        <p class="competencia-desc">Construção de lógicas de programação e aplicações orientadas a objectos.</p>
+                        <ul class="tech-list">
+                            <li><i class="fa-brands fa-java"></i> Java</li>
+                            <li><i class="fa-brands fa-php"></i> PHP</li>
+                            <li><i class="fa-brands fa-python"></i> Python</li>
+                            <li><i class="fa-solid fa-cubes"></i> Programação Orientada a Objectos</li>
+                            <li><i class="fa-solid fa-terminal"></i> Desenvolvimento de Aplicações</li>
+                        </ul>
+                    </div>
+                    <div class="competencia-card">
+                        <div class="competencia-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>Redes e Sistemas</h3>
+                        <p class="competencia-desc">Infraestrutura, suporte e configuração de ambientes tecnológicos.</p>
+                        <ul class="tech-list">
+                            <li><i class="fa-solid fa-network-wired"></i> Redes de Computadores</li>
+                            <li><i class="fa-solid fa-screwdriver-wrench"></i> Diagnóstico de Problemas</li>
+                            <li><i class="fa-solid fa-server"></i> Administração de Sistemas</li>
+                            <li><i class="fa-solid fa-gears"></i> Configuração de Ambientes</li>
+                        </ul>
+                    </div>
+                    <div class="competencia-card">
+                        <div class="competencia-icon"><i class="fa-solid fa-toolbox"></i></div>
+                        <h3>Ferramentas e Tecnologias</h3>
+                        <p class="competencia-desc">Ambientes de desenvolvimento e gestão de dados.</p>
+                        <ul class="tech-list">
+                            <li><i class="fa-solid fa-code"></i> Visual Studio Code</li>
+                            <li><i class="fa-brands fa-git-alt"></i> Git e GitHub (Em atualização)</li>
+                            <li><i class="fa-solid fa-database"></i> MySQL</li>
+                            <li><i class="fa-solid fa-server"></i> XAMPP</li>
+                            <li><i class="fa-solid fa-leaf"></i> Spring Boot (Conforme projectos)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção de Serviços -->
+        <section id="servicos" class="section servicos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">O que ofereço</span>
+                    <h2>Serviços Profissionais</h2>
+                    <p>Soluções tecnológicas desenhadas para impulsionar o seu negócio ou projecto.</p>
+                </div>
+                <div class="servicos-grid">
+                    <div class="servico-card">
+                        <div class="servico-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Criação de Websites</h3>
+                        <p>Websites institucionais, páginas pessoais, landing pages e sites para pequenos negócios.</p>
+                        <ul class="servico-features">
+                            <li><i class="fa-solid fa-check"></i> Design moderno e responsivo</li>
+                            <li><i class="fa-solid fa-check"></i> Otimização para telemóveis</li>
+                            <li><i class="fa-solid fa-check"></i> Estrutura optimizada</li>
+                        </ul>
+                        <a href="https://wa.me/258850724566?text=Olá%20João,%20gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Criação%20de%20Websites." target="_blank" class="btn btn-outline btn-sm">Solicitar serviço <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="servico-card">
+                        <div class="servico-icon"><i class="fa-solid fa-window-maximize"></i></div>
+                        <h3>Sistemas Web</h3>
+                        <p>Soluções web personalizadas para organizar informações e apoiar processos empresariais.</p>
+                        <ul class="servico-features">
+                            <li><i class="fa-solid fa-check"></i> Gestão de dados estruturada</li>
+                            <li><i class="fa-solid fa-check"></i> Interfaces funcionais</li>
+                            <li><i class="fa-solid fa-check"></i> Suporte a processos internos</li>
+                        </ul>
+                        <a href="https://wa.me/258850724566?text=Olá%20João,%20gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Sistemas%20Web." target="_blank" class="btn btn-outline btn-sm">Solicitar serviço <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="servico-card">
+                        <div class="servico-icon"><i class="fa-solid fa-address-card"></i></div>
+                        <h3>Portfólios e Páginas Profissionais</h3>
+                        <p>Páginas para estudantes, profissionais, empreendedores e marcas pessoais.</p>
+                        <ul class="servico-features">
+                            <li><i class="fa-solid fa-check"></i> Destaque de competências</li>
+                            <li><i class="fa-solid fa-check"></i> Apresentação de projectos</li>
+                            <li><i class="fa-solid fa-check"></i> Contacto directo integrado</li>
+                        </ul>
+                        <a href="https://wa.me/258850724566?text=Olá%20João,%20gostaria%20de%20saber%20mais%20sobre%20Portfólios%20e%20Páginas%20Profissionais." target="_blank" class="btn btn-outline btn-sm">Solicitar serviço <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="servico-card">
+                        <div class="servico-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Manutenção e Melhoria</h3>
+                        <p>Correcção de problemas visuais, ajustes de layout e melhoria da experiência do utilizador.</p>
+                        <ul class="servico-features">
+                            <li><i class="fa-solid fa-check"></i> Revisão de código e design</li>
+                            <li><i class="fa-solid fa-check"></i> Correção de erros visuais</li>
+                            <li><i class="fa-solid fa-check"></i> Atualização de conteúdos</li>
+                        </ul>
+                        <a href="https://wa.me/258850724566?text=Olá%20João,%20gostaria%20de%20saber%20mais%20sobre%20Manutenção%20e%20Melhoria%20de%20Websites." target="_blank" class="btn btn-outline btn-sm">Solicitar serviço <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="servico-card">
+                        <div class="servico-icon"><i class="fa-solid fa-computer"></i></div>
+                        <h3>Suporte Informático</h3>
+                        <p>Apoio técnico básico, instalação de programas, configuração de ambientes de trabalho e diagnóstico.</p>
+                        <ul class="servico-features">
+                            <li><i class="fa-solid fa-check"></i> Configuração de estações</li>
+                            <li><i class="fa-solid fa-check"></i> Instalação de software</li>
+                            <li><i class="fa-solid fa-check"></i> Diagnóstico de avarias</li>
+                        </ul>
+                        <a href="https://wa.me/258850724566?text=Olá%20João,%20gostaria%20de%20saber%20mais%20sobre%20Suporte%20Informático." target="_blank" class="btn btn-outline btn-sm">Solicitar serviço <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="servico-card">
+                        <div class="servico-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>Redes e Configuração</h3>
+                        <p>Apoio em tarefas básicas de configuração e diagnóstico de redes e sistemas informáticos.</p>
+                        <ul class="servico-features">
+                            <li><i class="fa-solid fa-check"></i> Configuração básica de redes</li>
+                            <li><i class="fa-solid fa-check"></i> Resolução de falhas de ligação</li>
+                            <li><i class="fa-solid fa-check"></i> Organização de sistemas</li>
+                        </ul>
+                        <a href="https://wa.me/258850724566?text=Olá%20João,%20gostaria%20de%20saber%20mais%20sobre%20Redes%20e%20Configuração." target="_blank" class="btn btn-outline btn-sm">Solicitar serviço <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção de Projectos -->
+        <section id="projectos" class="section projectos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfólio</span>
+                    <h2>Projectos Recentes</h2>
+                    <p>Trabalhos académicos e práticos desenvolvidos durante a minha formação.</p>
+                </div>
+                
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="sistemas">Sistemas</button>
+                    <button class="filter-btn" data-filter="academico">Académicos</button>
+                </div>
+
+                <div class="projectos-grid">
+                    <div class="projecto-card" data-category="sistemas academico">
+                        <div class="projecto-img">
+                            <img src="images/biblioteca-ucm.webp" alt="Painel de gestão da biblioteca UCM-FEG" loading="lazy">
+                        </div>
+                        <div class="projecto-content">
+                            <span class="projecto-status status-demo">Demonstração / Académico</span>
+                            <h3>Sistema de Empréstimo de Livros</h3>
+                            <p>Sistema desenvolvido para gestão de empréstimos, livros e leitores numa biblioteca universitária.</p>
+                            <div class="projecto-techs">
+                                <span>Java</span>
+                                <span>MySQL</span>
+                                <span>UML</span>
+                            </div>
+                            <div class="projecto-links">
+                                <a href="#contacto" class="btn btn-outline btn-sm"><i class="fa-solid fa-eye"></i> Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projecto-card" data-category="web academico">
+                        <div class="projecto-img">
+                            <img src="images/arquivo-digital.webp" alt="Portal do Estudante UCM-FEG - Arquivo Digital de Monografias" loading="lazy">
+                        </div>
+                        <div class="projecto-content">
+                            <span class="projecto-status status-dev">Em Desenvolvimento</span>
+                            <h3>Sistema de Arquivo Digital de Monografias</h3>
+                            <p>Plataforma para armazenamento, consulta e gestão de monografias e trabalhos de fim de curso para UCM-FEG.</p>
+                            <div class="projecto-techs">
+                                <span>PHP</span>
+                                <span>HTML/CSS</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="projecto-links">
+                                <a href="#contacto" class="btn btn-outline btn-sm"><i class="fa-solid fa-eye"></i> Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projecto-card" data-category="web">
+                        <div class="projecto-img projecto-img--mobile">
+                            <img src="images/buycarmoz.webp" alt="Aplicação BuyCarMoz - catálogo de veículos" loading="lazy">
+                        </div>
+                        <div class="projecto-content">
+                            <span class="projecto-status status-demo">Demonstração</span>
+                            <h3>Aplicação de Apresentação de Veículos</h3>
+                            <p>Interface web moderna para exposição de conceitos automóveis e catálogos de veículos personalizados.</p>
+                            <div class="projecto-techs">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="projecto-links">
+                                <a href="#contacto" class="btn btn-outline btn-sm"><i class="fa-solid fa-eye"></i> Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção Como Trabalho -->
+        <section class="section processo">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Metodologia</span>
+                    <h2>Como Trabalho</h2>
+                    <p>Um processo estruturado para garantir resultados claros e de qualidade.</p>
+                </div>
+                <div class="processo-grid">
+                    <div class="processo-step">
+                        <div class="step-number">01</div>
+                        <h3>Conversa Inicial</h3>
+                        <p>Compreensão profunda das necessidades, objetivos e requisitos do projeto.</p>
+                    </div>
+                    <div class="processo-step">
+                        <div class="step-number">02</div>
+                        <h3>Planeamento</h3>
+                        <p>Definição da estrutura, tecnologias e arquitetura ideal para a solução.</p>
+                    </div>
+                    <div class="processo-step">
+                        <div class="step-number">03</div>
+                        <h3>Desenvolvimento</h3>
+                        <p>Codificação, testes rigorosos de funcionamento e ajustes de design.</p>
+                    </div>
+                    <div class="processo-step">
+                        <div class="step-number">04</div>
+                        <h3>Entrega e Suporte</h3>
+                        <p>Demonstração final, entrega do projeto e ajustes acordados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção Testemunhos -->
+        <section class="section testemunhos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Feedback</span>
+                    <h2>Testemunhos</h2>
+                    <p>Avaliações de clientes e parceiros.</p>
+                </div>
+                <div class="testemunhos-card-empty">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <p>Esta secção será actualizada em breve com avaliações e testemunhos de clientes satisfeitos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção de Contacto -->
+        <section id="contacto" class="section contacto">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Vamos conversar</span>
+                    <h2>Vamos transformar a tua ideia num projecto digital?</h2>
+                    <p>Entre em contacto para oportunidades, dúvidas ou pedidos de serviços.</p>
+                </div>
+                <div class="contacto-grid">
+                    <div class="contacto-info">
+                        <h3>Informações de Contacto</h3>
+                        <p>Estou disponível para novos desafios, parcerias e projetos tecnológicos. Envie uma mensagem diretamente ou através dos canais abaixo.</p>
+                        
+                        <ul class="contacto-list">
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <span>E-mail</span>
+                                    <strong>valtermangasse@gmail.com</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <div>
+                                    <span>WhatsApp / Telemóvel</span>
+                                    <strong>+258 85 072 4566 / 83 471 7824</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <span>Localização</span>
+                                    <strong>Beira, Moçambique</strong>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="social-links">
+                            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://wa.me/258850724566" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contacto-form-wrapper">
+                        <form id="contactoForm" class="contacto-form">
+                            <div class="form-group">
+                                <label for="nome">O seu nome</label>
+                                <input type="text" id="nome" name="nome" placeholder="Ex: Maria Santos" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">O seu e-mail</label>
+                                <input type="email" id="email" name="email" placeholder="Ex: maria@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto" placeholder="Ex: Criação de Website" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva os detalhes do seu projecto ou dúvida..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar mensagem <i class="fa-solid fa-paper-plane"></i></button>
+                            <div id="formFeedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">JV<span>J</span></a>
+                <p>Desenvolvimento de soluções tecnológicas, web design e sistemas modernos em Moçambique.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#competencias">Competências</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#projectos">Projectos</a></li>
+                    <li><a href="#contacto">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Redes</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/258850724566" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="currentYear">2026</span> João Valeriano Júnior. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
